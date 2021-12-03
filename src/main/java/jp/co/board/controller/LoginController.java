@@ -8,15 +8,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 //컨트롤러 선언
 @Controller
-public class HomeController {
+public class LoginController {
 	
-	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+	private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
 	
 	//리퀘스트 맵핑 선언
 	@RequestMapping
 	public String home() {
 		
-		return "home";
+		return "login";
 	}
 	
 }
