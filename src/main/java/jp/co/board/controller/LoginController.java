@@ -37,15 +37,7 @@ public class LoginController {
 		
 		ModelAndView mv = new ModelAndView();
 		
-		int result = regUserService.RegUserInfo(id, password, name, age, phonenumber, address);
-		
-		if(result == 0) {
-			
-			mv.setViewName("login");
-		}else {
-			
-			mv.setViewName("login");
-		}
+		mv = regUserService.RegUserInfo(id, password, name, age, phonenumber, address);
 				
 		return mv;
 	}

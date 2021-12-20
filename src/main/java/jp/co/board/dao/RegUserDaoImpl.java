@@ -21,7 +21,7 @@ public class RegUserDaoImpl implements RegUserDao {
 	public int RegUserInfo(UserDto userDto) throws SQLException, ClassNotFoundException {
 		
 		Class.forName("com.mysql.jdbc.Driver");
-		String url = "jdbc:mysql://localhost:3306/user_info";
+		String url = "jdbc:mysql://localhost:3306/test";
 		String id = "root";
 		String pw = "";
 		
